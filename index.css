@@ -1,0 +1,96 @@
+body{
+    background-color: rgba(218, 203, 71, 0.993);
+}
+.git-logo{
+    position: absolute;
+    font-size:2rem;
+    padding:4px 4px;
+    text-decoration: none;
+    color:rgb(8, 7, 7);
+}
+.game-title{
+    text-align:center;
+    font-family: 'Press start 2P';
+    padding-top:80px;
+   
+}
+.align-div{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.play-btn{
+    
+    font-family: 'Press start 2P';
+    padding:15px 10px;
+    background: none;
+    font-size:2rem;
+    border-radius: 10px;
+    border: 3px solid rgb(8, 8, 8);
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    animation : highlight 2s;
+    animation-iteration-count: infinite;
+    transition: 1s ease-in-out;
+    
+}
+@keyframes highlight{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.align-btn{
+    display:flex;
+    justify-content: center;
+    margin-top:60px;
+}
+.title-icons{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:90px auto;
+}
+.icon{
+    font-size:3.5rem;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:768px){
+    .game-title{
+       font-size:1.6rem;
+      
+    }
+}
+@media(max-width:559px){
+    .game-title{
+        font-size:1.3rem;
+       
+     }
+     .play-btn{
+         font-size: 1.5rem;
+         text-overflow: none;
+     }
+     .play-btn:active{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:450px){
+    .game-title{
+        font-size:0.9rem;
+       
+     }
+    
+}
