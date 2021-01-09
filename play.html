@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' id='generate-fonts-css'
+            href='//fonts.googleapis.com/css?family=Shanti%3Aregular%7CVT323%3Aregular%7CPress+Start+2P%3Aregular&subset=latin%2Clatin-ext&ver=1.2.4'
+            type='text/css' media='all' />
+        <script src="https://kit.fontawesome.com/6f41a76c28.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="play.css">
+        <title>RSP</title>
+    </head>
+
+    <body onload="updateName()">
+        <div class="topnav">
+            <a href="index.html"><i class="fas fa-home nav-icon"></i></a>
+        </div>
+
+        <audio id="Winaudio" src="bgm/gamewin.wav"></audio>
+        <audio id="Loseaudio" src="bgm/gamelose.wav"></audio>
+        <audio id="btnaudio" src="bgm/button-click-sound-effect.mp3"></audio>
+
+        <div class=" player-div">
+            <div class="players">
+                <i class="fas fa-user-alt player-icon"></i>
+                <p class="playername">Player</p>
+
+            </div>
+            <div class="players">
+                <i class="fas fa-user-alt player-icon"></i>
+                <p class="CPUname">CPU</p>
+            </div>
+        </div>
+        <div class="result">
+            <div id="playercall"></div>
+            <div class="score">
+                <p class="pscore">0</p>
+                <p>-</p>
+                <p class="cscore">0</p>
+            </div>
+            <div id="CPUcall"></div>
+        </div>
+        <div class="input-div">
+            <button class="input" id="rock"><i class="fas fa-hand-rock"></i></button>
+            <button class="input" id="paper"><i class="fas fa-hand-paper"></i></button>
+            <button class="input" id="scissors"><i class="fas fa-hand-scissors"></i></button>
+        </div>
+        <p class="playerWon">You Won!!</p>
+        <p class="cpuWon">You Lost!!</p>
+        <div class="align-btn">
+            <button class="play-btn" onclick="reset()">Play again</button>
+        </div>
+        <script src="game.js"></script>
+    </body>
+
+</html>
